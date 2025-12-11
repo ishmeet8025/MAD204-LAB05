@@ -1,6 +1,6 @@
 
 package com.example.lab5;
-
+// Documentation: Added detailed header comment describing the activity purpose and student info.
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +21,7 @@ import java.util.List;
 
 /**
  * Course: MAD204 - Lab 5
- * Student: YOUR NAME - YOUR ID
+ * Student: YOUR NAME Ishmeet Singh- YOUR ID A00202436
  * Date: 2025-02-10
  * Description: Main activity that manages media picking, displaying, and favorites.
  */
