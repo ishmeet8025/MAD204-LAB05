@@ -1,3 +1,4 @@
+// Documentation: This method determines whether the selected URI is an image or video and displays it accordingly.
 // Export explanation: Converts Room favorites list into JSON for persistence or sharing.
 package com.example.lab5;
 // Documentation: Added detailed header comment describing the activity purpose and student info.
