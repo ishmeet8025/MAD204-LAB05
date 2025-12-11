@@ -1,10 +1,3 @@
-/**
- * Course: MAD204 - Lab 5
- * Student: YOUR NAME - YOUR ID
- * Date: 2025-02-10
- * Description: DAO interface providing database operations for favorites.
- */
-
 
 package com.example.lab5;
 
@@ -15,8 +8,12 @@ import androidx.room.Query;
 
 import java.util.List;
 
+/**
+ * DAO for favorites.
+ */
 @Dao
 public interface FavoriteDao {
+
     @Insert
     void insert(FavoriteMedia media);
 

@@ -1,10 +1,3 @@
-/**
- * Course: MAD204 - Lab 5
- * Student: YOUR NAME - YOUR ID
- * Date: 2025-02-10
- * Description: Main activity that manages UI and media handling logic.
- */
-
 
 package com.example.lab5;
 
@@ -14,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -27,6 +19,12 @@ import com.google.gson.Gson;
 
 import java.util.List;
 
+/**
+ * Course: MAD204 - Lab 5
+ * Student: YOUR NAME - YOUR ID
+ * Date: 2025-02-10
+ * Description: Main activity that manages media picking, displaying, and favorites.
+ */
 public class MainActivity extends AppCompatActivity {
 
     private ActivityResultLauncher<String> pickSingleMedia;
@@ -82,8 +80,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addToFavorites(View v){
-        if(selectedUri==null) return;
-        FavoriteMedia media=new FavoriteMedia(selectedUri.toString(),selectedType);
+        if(selectedUri == null) return;
+        FavoriteMedia media = new FavoriteMedia(selectedUri.toString(), selectedType);
         FavoritesDatabase.getInstance(this).favoriteDao().insert(media);
         Toast.makeText(this,"Added to favorites",Toast.LENGTH_SHORT).show();
         loadFavorites();
@@ -93,17 +91,17 @@ public class MainActivity extends AppCompatActivity {
         List<FavoriteMedia> list = FavoritesDatabase.getInstance(this)
                 .favoriteDao().getAllFavorites();
 
-        RecyclerView rv=findViewById(R.id.recyclerView);
+        RecyclerView rv = findViewById(R.id.recyclerView);
         rv.setLayoutManager(new LinearLayoutManager(this));
-        rv.setAdapter(new FavoriteAdapter(this,list));
+        rv.setAdapter(new FavoriteAdapter(this, list));
     }
 
     public void exportJSON(View v){
         List<FavoriteMedia> list = FavoritesDatabase.getInstance(this)
                 .favoriteDao().getAllFavorites();
 
-        Gson gson=new Gson();
-        String json=gson.toJson(list);
-        Log.d("EXPORT_JSON",json);
+        Gson gson = new Gson();
+        String json = gson.toJson(list);
+        Log.d("EXPORT_JSON", json);
     }
 }
