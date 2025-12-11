@@ -1,4 +1,4 @@
-
+// DAO explanation: Provides database access methods used by the favorites feature.
 package com.example.lab5;
 
 import androidx.room.Dao;
