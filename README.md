@@ -2,8 +2,8 @@
 # MAD204 - Lab 5: Media Favorites App
 
 ## Student Information
-**Name:** YOUR NAME  
-**Student ID:** YOUR ID  
+**Name:** Ishmeet Singh  
+**Student ID:**  A00202436 
 
 ---
 
@@ -33,16 +33,3 @@ This Android app allows users to:
 ✔ Documentation headers in each Java file  
 ✔ XML layouts  
 ✔ README (this file)
-
----
-
-## 🛠 Setup Instructions
-1. Extract ZIP  
-2. Open folder in Android Studio  
-3. Let Gradle sync  
-4. Run the app on emulator or device  
-
----
-
-## 📜 License
-For educational use in MAD204.
