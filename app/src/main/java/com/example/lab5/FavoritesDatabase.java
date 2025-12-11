@@ -1,4 +1,4 @@
-
+// Singleton explanation: Ensures only one instance of the Room database is created.
 package com.example.lab5;
 
 import android.content.Context;
