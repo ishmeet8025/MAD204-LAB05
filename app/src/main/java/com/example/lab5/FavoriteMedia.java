@@ -1,4 +1,4 @@
-
+// Entity purpose: This class stores media (image/video) information in Room database.
 package com.example.lab5;
 
 import androidx.room.Entity;
