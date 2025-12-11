@@ -1,4 +1,4 @@
-
+// Export explanation: Converts Room favorites list into JSON for persistence or sharing.
 package com.example.lab5;
 // Documentation: Added detailed header comment describing the activity purpose and student info.
 import androidx.activity.result.ActivityResultLauncher;
