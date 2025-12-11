@@ -1,4 +1,4 @@
-
+<!-- Layout purpose: Displays controls for picking media, saving favorites, and reviewing saved items. -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:padding="16dp"
