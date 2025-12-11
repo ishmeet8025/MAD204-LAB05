@@ -1,4 +1,4 @@
-// DAO explanation: Provides database access methods used by the favorites feature.
+// Documentation: This DAO defines the operations used to store and retrieve favorites from Room.
 package com.example.lab5;
 
 import androidx.room.Dao;
