@@ -1,3 +1,4 @@
+// Documentation: Room database singleton that stores favorite media items using the DAO.
 // Singleton explanation: Ensures only one instance of the Room database is created.
 package com.example.lab5;
 
